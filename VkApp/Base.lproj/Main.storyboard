@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="VkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="QbI-BP-clH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zx-4G-0cc">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="528.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-Xb-DJy">
+                                                <rect key="frame" x="103" y="100" width="200" height="408.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VKApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFt-Hk-Xb4">
+                                                        <rect key="frame" x="59" y="0.0" width="82" height="32.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <color key="textColor" systemColor="linkColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy1-4G-Pkj">
+                                                        <rect key="frame" x="79" y="79.5" width="42" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69d-no-Laj">
+                                                        <rect key="frame" x="0.0" y="147" width="200" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="bEx-a1-8cV"/>
+                                                            <constraint firstAttribute="height" constant="35" id="lyk-3j-3jc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFD-ZM-7Uq">
+                                                        <rect key="frame" x="63.5" y="229" width="73.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Evm-nB-beZ">
+                                                        <rect key="frame" x="0.0" y="296.5" width="200" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="Udf-Xt-nnc"/>
+                                                            <constraint firstAttribute="height" constant="35" id="oXO-H8-reE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwd-4Y-Kbg">
+                                                        <rect key="frame" x="76.5" y="378.5" width="47" height="30"/>
+                                                        <state key="normal" title="Sign in"/>
+                                                        <connections>
+                                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAj-SU-Bwd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="EB9-Xb-DJy" secondAttribute="bottom" constant="20" id="LgE-ox-dHM"/>
+                                            <constraint firstItem="EB9-Xb-DJy" firstAttribute="top" secondItem="7zx-4G-0cc" secondAttribute="top" constant="100" id="j43-yh-V2A"/>
+                                            <constraint firstItem="EB9-Xb-DJy" firstAttribute="centerX" secondItem="7zx-4G-0cc" secondAttribute="centerX" id="sqr-GX-xNP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7zx-4G-0cc" firstAttribute="bottom" secondItem="QbI-BP-clH" secondAttribute="bottom" id="PUt-ky-VSe"/>
+                                    <constraint firstItem="7zx-4G-0cc" firstAttribute="leading" secondItem="QbI-BP-clH" secondAttribute="leading" id="Ruc-GR-M9X"/>
+                                    <constraint firstItem="7zx-4G-0cc" firstAttribute="top" secondItem="QbI-BP-clH" secondAttribute="top" id="kJ3-cp-86R"/>
+                                    <constraint firstAttribute="trailing" secondItem="7zx-4G-0cc" secondAttribute="trailing" id="uWL-Nb-xeM"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4Rj-4D-nBY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="RhN-hh-nXO"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QbI-BP-clH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2C9-RV-1rt"/>
+                            <constraint firstItem="QbI-BP-clH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dBI-dg-PRC"/>
+                            <constraint firstItem="QbI-BP-clH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iDA-wA-tvq"/>
+                            <constraint firstItem="QbI-BP-clH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mlH-gS-Sl4"/>
+                            <constraint firstItem="7zx-4G-0cc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.980676" id="rpn-Jb-SCw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Qwd-4Y-Kbg" id="IIs-hR-HFU"/>
+                        <outlet property="loginText" destination="69d-no-Laj" id="4mN-2Y-cOd"/>
+                        <outlet property="passwordText" destination="Evm-nB-beZ" id="o77-qz-tA4"/>
+                        <outlet property="scrollView" destination="QbI-BP-clH" id="iWb-QC-vw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
