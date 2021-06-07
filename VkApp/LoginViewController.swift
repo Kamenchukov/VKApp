@@ -69,7 +69,33 @@ class LoginViewController: UIViewController {
 
         
     }
-    
+     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        let checkResult = chechUserData()
+        
+        if !checkResult{
+            showLoginError()
+        }
+        return checkResult
+     }
+    func chechUserData() -> Bool {
+       guard let login = loginText.text,
+             let password = passwordText.text else {
+            return false
+       }
+        
+        if login == "" && password == "" {
+            return true
+        } else {
+            return false
+        }
+    }
+    func showLoginError() {
+        let alert = UIAlertController(title: "Ошибка", message: "Введен неправильно логин или пароль", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 
 
 }
