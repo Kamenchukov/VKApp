@@ -10,4 +10,8 @@ import UIKit
 class FotoViewCell: UICollectionViewCell {
     
     @IBOutlet weak var friendFoto: UIImageView!
+    
+    func configure(_ image: UserFoto) {
+        friendFoto.image = UIImage(named: image.foto)
+    }
 }

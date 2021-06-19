@@ -13,6 +13,8 @@
 		E11EAD9626656498008ED723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11EAD9526656498008ED723 /* Assets.xcassets */; };
 		E11EAD9926656498008ED723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11EAD9726656498008ED723 /* LaunchScreen.storyboard */; };
 		E11EADA426656502008ED723 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EADA326656502008ED723 /* LoginViewController.swift */; };
+		E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AC267E5345004BB744 /* AvatarView.swift */; };
+		E14A74AF267E5368004BB744 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AE267E5368004BB744 /* LikeControl.swift */; };
 		E1B1ADDF2672954B00230C7E /* MyCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */; };
 		E1B1ADE12672957C00230C7E /* MyCommunitiesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */; };
 		E1B1ADE326729A2800230C7E /* allCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */; };
@@ -34,6 +36,8 @@
 		E11EAD9826656498008ED723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11EAD9A26656498008ED723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E11EADA326656502008ED723 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E14A74AC267E5345004BB744 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		E14A74AE267E5368004BB744 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewController.swift; sourceTree = "<group>"; };
 		E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewCell.swift; sourceTree = "<group>"; };
 		E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allCommunitiesViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		E11EAD8B26656496008ED723 /* VkApp */ = {
 			isa = PBXGroup;
 			children = (
+				E14A74AB267E514E004BB744 /* Customs */,
 				E11EAD8C26656496008ED723 /* AppDelegate.swift */,
 				E11EAD8E26656496008ED723 /* SceneDelegate.swift */,
 				E1B1ADDD2672949F00230C7E /* Model */,
@@ -87,6 +92,15 @@
 				E11EAD9A26656498008ED723 /* Info.plist */,
 			);
 			path = VkApp;
+			sourceTree = "<group>";
+		};
+		E14A74AB267E514E004BB744 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				E14A74AC267E5345004BB744 /* AvatarView.swift */,
+				E14A74AE267E5368004BB744 /* LikeControl.swift */,
+			);
+			path = Customs;
 			sourceTree = "<group>";
 		};
 		E1B1ADDB2672948500230C7E /* Controllers */ = {
@@ -198,8 +212,10 @@
 				E1B1ADE326729A2800230C7E /* allCommunitiesViewController.swift in Sources */,
 				E11EAD8D26656496008ED723 /* AppDelegate.swift in Sources */,
 				E1B1ADF12672A13700230C7E /* Group.swift in Sources */,
+				E14A74AF267E5368004BB744 /* LikeControl.swift in Sources */,
 				E1B1ADDF2672954B00230C7E /* MyCommunitiesViewController.swift in Sources */,
 				E1B1ADEB26729C7000230C7E /* FotoViewController.swift in Sources */,
+				E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */,
 				E1B1ADEF2672A12900230C7E /* User.swift in Sources */,
 				E1B1ADE526729A6600230C7E /* allCommunitiesViewCell.swift in Sources */,
 				E11EAD8F26656496008ED723 /* SceneDelegate.swift in Sources */,

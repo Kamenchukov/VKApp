@@ -11,15 +11,19 @@ class FriendsViewCell: UITableViewCell {
 
     @IBOutlet weak var friendName: UILabel!
     @IBOutlet weak var friendAvatar: UIImageView!
+    func configure(_ friends: UserModel){
+        friendName.text = friends.name
+        friendAvatar.image = UIImage(named: friends.foto)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
 
 }

@@ -7,11 +7,15 @@
 
 import UIKit
 
-class myCommunitiesViewCell: UITableViewCell {
+class MyCommunitiesViewCell: UITableViewCell {
 
     @IBOutlet weak var myCommunityFoto: UIImageView!
     @IBOutlet weak var myCommunityName: UILabel!
     
+    func configure(_ groups: GroupModel){
+        myCommunityName.text = groups.name
+        myCommunityFoto.image = UIImage(named: groups.foto)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

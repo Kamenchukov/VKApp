@@ -12,16 +12,19 @@ class AllCommunitiesViewCell: UITableViewCell {
     @IBOutlet weak var allCommunitiesName: UILabel!
     @IBOutlet weak var allCommunitiesFoto: UIImageView!
     
-    
+    func configure(_ groups: GroupModel){
+        allCommunitiesName.text = groups.name
+        allCommunitiesFoto.image = UIImage(named: groups.foto)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
 
 }
