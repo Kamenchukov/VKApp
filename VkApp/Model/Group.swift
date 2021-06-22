@@ -15,13 +15,12 @@ struct GroupModel {
 struct GroupData {
     static let shared = GroupData()
     var groupData:[GroupModel]
-    var myGroupData:[GroupModel]
     
     private init() {
         groupData = [
+                     GroupModel(name: "Demolition Ranch", foto: "Matt"),
                      GroupModel(name: "We love Drake", foto: "Drake"),
                      GroupModel(name: "Fit girls", foto: "fit"),
                     ]
-        myGroupData = [GroupModel(name: "Demolition Ranch", foto: "Matt")]
     }
 }

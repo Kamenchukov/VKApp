@@ -10,10 +10,11 @@ import UIKit
 class FriendsViewCell: UITableViewCell {
 
     @IBOutlet weak var friendName: UILabel!
-    @IBOutlet weak var friendAvatar: UIImageView!
-    func configure(_ friends: UserModel){
+  
+    @IBOutlet weak var avatarView: AvatarView!
+    func configure(_ friends: UserModel) {
         friendName.text = friends.name
-        friendAvatar.image = UIImage(named: friends.foto)
+        avatarView.image = UIImage(named: friends.foto)
     }
     override func awakeFromNib() {
         super.awakeFromNib()

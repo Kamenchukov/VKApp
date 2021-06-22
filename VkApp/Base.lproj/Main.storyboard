@@ -95,9 +95,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="K9J-mr-a8j">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="allGroups" id="lpM-wI-1sU" customClass="AllCommunitiesViewCell" customModule="VkApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="96.5"/>
+                                <rect key="frame" x="0.0" y="68.5" width="414" height="96.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lpM-wI-1sU" id="S9n-1G-BmP">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
@@ -144,6 +149,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="D8Y-Ag-aJy"/>
                     <connections>
+                        <outlet property="searchBar" destination="K9J-mr-a8j" id="O4C-Bb-MtN"/>
                         <outlet property="tabelView" destination="MO5-2g-cQm" id="ykh-QF-qgE"/>
                     </connections>
                 </tableViewController>
@@ -182,12 +188,6 @@
                                                 </label>
                                                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rjs-vC-egN" customClass="AvatarView" customModule="VkApp" customModuleProvider="target">
                                                     <rect key="frame" x="326" y="8" width="80" height="80.5"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q13-Hb-Hzc">
-                                                            <rect key="frame" x="0.0" y="-0.5" width="80" height="80.5"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="npr-Pe-rh8"/>
@@ -205,7 +205,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="friendAvatar" destination="q13-Hb-Hzc" id="nQZ-bw-yrh"/>
+                                            <outlet property="avatarView" destination="rjs-vC-egN" id="SKA-lr-qL8"/>
                                             <outlet property="friendName" destination="a1D-eq-U0U" id="EFO-59-d3Z"/>
                                             <segue destination="N6w-LL-MOR" kind="show" identifier="showFotoSegue" id="x7v-AN-z7o"/>
                                         </connections>

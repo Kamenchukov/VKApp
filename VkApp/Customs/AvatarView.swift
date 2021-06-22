@@ -26,12 +26,14 @@ class AvatarView: UIView {
     
     var image : UIImage? {
         didSet {
-            imageView?.removeFromSuperview()
-            imageView = UIImageView(image: image)
+            imageView.image = image
             setup()
         }
     }
-    private var imageView : UIImageView?
+    private var imageView : UIImageView = {
+        let imageView = UIImageView()
+        return imageView
+    }()
     
     @IBInspectable
     var shadowOpacity : Float = 0.7 {
@@ -57,29 +59,26 @@ class AvatarView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
     }
     private func setup() {
         layer.backgroundColor = UIColor.white.cgColor
         let cornerRadius = min(self.bounds.size.height / 2, self.bounds.size.width / 2)
         layer.cornerRadius = cornerRadius
-        
         layer.shadowColor = shadowColor.cgColor
         layer.shadowOpacity = shadowOpacity
         layer.shadowRadius = shadowRadius
         layer.shadowOffset = CGSize(width: 3, height: 3)
         
-        guard let imageView = imageView else {return}
         imageView.makeRonded(cornerRadius: cornerRadius)
         addSubview(imageView)
     }
     
     override func layoutSubviews() {
-        imageView?.frame = bounds
+        imageView.frame = bounds
+        setup()
     }
     
 

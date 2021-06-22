@@ -11,7 +11,7 @@ class MyCommunitiesViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
     
-    var communities = GroupData.shared.myGroupData
+    var communities:[GroupModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

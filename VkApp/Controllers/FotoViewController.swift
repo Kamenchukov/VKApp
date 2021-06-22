@@ -13,7 +13,7 @@ class FotoViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var fotos = UsersFotoData.shared.userFoto
-    
+    var userID: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -31,7 +31,8 @@ extension FotoViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "fotoCell", for: indexPath) as! FotoViewCell
-        //cell.friendFoto.image = UIImage(systemName: "person")
+//        cell.friendFoto.image = UIImage(named: fotos[userID ?? 0].foto ?? "defaultAvatar")
+        
         cell.configure(fotos[indexPath.item])
         
         
