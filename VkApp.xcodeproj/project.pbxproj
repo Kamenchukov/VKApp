@@ -13,6 +13,26 @@
 		E11EAD9626656498008ED723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11EAD9526656498008ED723 /* Assets.xcassets */; };
 		E11EAD9926656498008ED723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11EAD9726656498008ED723 /* LaunchScreen.storyboard */; };
 		E11EADA426656502008ED723 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EADA326656502008ED723 /* LoginViewController.swift */; };
+<<<<<<< Updated upstream
+=======
+		E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AC267E5345004BB744 /* AvatarView.swift */; };
+		E14A74AF267E5368004BB744 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AE267E5368004BB744 /* LikeControl.swift */; };
+		E1B1ADDF2672954B00230C7E /* MyCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */; };
+		E1B1ADE12672957C00230C7E /* MyCommunitiesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */; };
+		E1B1ADE326729A2800230C7E /* allCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */; };
+		E1B1ADE526729A6600230C7E /* allCommunitiesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE426729A6600230C7E /* allCommunitiesViewCell.swift */; };
+		E1B1ADE726729BAE00230C7E /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE626729BAE00230C7E /* FriendsViewController.swift */; };
+		E1B1ADE926729BC900230C7E /* FriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE826729BC900230C7E /* FriendsViewCell.swift */; };
+		E1B1ADEB26729C7000230C7E /* FotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADEA26729C7000230C7E /* FotoViewController.swift */; };
+		E1B1ADED26729C9300230C7E /* FotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADEC26729C9300230C7E /* FotoViewCell.swift */; };
+		E1B1ADEF2672A12900230C7E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADEE2672A12900230C7E /* User.swift */; };
+		E1B1ADF12672A13700230C7E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADF02672A13700230C7E /* Group.swift */; };
+		E1D8BD93267F3C4500ED2FF2 /* SectionHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8BD92267F3C4500ED2FF2 /* SectionHeaderTableView.swift */; };
+		E1D8BD952684FDE800ED2FF2 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8BD942684FDE800ED2FF2 /* News.swift */; };
+		E1D8BD972684FE1300ED2FF2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8BD962684FE1300ED2FF2 /* NewsViewController.swift */; };
+		E1D8BD9A2684FE5300ED2FF2 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8BD992684FE5300ED2FF2 /* NewsViewCell.swift */; };
+		E1D8BD9C2687205F00ED2FF2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8BD9B2687205F00ED2FF2 /* LoadingViewController.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +44,26 @@
 		E11EAD9826656498008ED723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11EAD9A26656498008ED723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E11EADA326656502008ED723 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		E14A74AC267E5345004BB744 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		E14A74AE267E5368004BB744 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewController.swift; sourceTree = "<group>"; };
+		E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewCell.swift; sourceTree = "<group>"; };
+		E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allCommunitiesViewController.swift; sourceTree = "<group>"; };
+		E1B1ADE426729A6600230C7E /* allCommunitiesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allCommunitiesViewCell.swift; sourceTree = "<group>"; };
+		E1B1ADE626729BAE00230C7E /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		E1B1ADE826729BC900230C7E /* FriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewCell.swift; sourceTree = "<group>"; };
+		E1B1ADEA26729C7000230C7E /* FotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewController.swift; sourceTree = "<group>"; };
+		E1B1ADEC26729C9300230C7E /* FotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewCell.swift; sourceTree = "<group>"; };
+		E1B1ADEE2672A12900230C7E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1B1ADF02672A13700230C7E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		E1D8BD92267F3C4500ED2FF2 /* SectionHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableView.swift; sourceTree = "<group>"; };
+		E1D8BD942684FDE800ED2FF2 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		E1D8BD962684FE1300ED2FF2 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		E1D8BD992684FE5300ED2FF2 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
+		E1D8BD9B2687205F00ED2FF2 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +107,63 @@
 			path = VkApp;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+		E14A74AB267E514E004BB744 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				E14A74AC267E5345004BB744 /* AvatarView.swift */,
+				E14A74AE267E5368004BB744 /* LikeControl.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		E1B1ADDB2672948500230C7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E11EADA326656502008ED723 /* LoginViewController.swift */,
+				E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */,
+				E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */,
+				E1B1ADE626729BAE00230C7E /* FriendsViewController.swift */,
+				E1B1ADEA26729C7000230C7E /* FotoViewController.swift */,
+				E1D8BD962684FE1300ED2FF2 /* NewsViewController.swift */,
+				E1D8BD9B2687205F00ED2FF2 /* LoadingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1B1ADDC2672949400230C7E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8BD91267F3C1100ED2FF2 /* Header */,
+				E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */,
+				E1B1ADE426729A6600230C7E /* allCommunitiesViewCell.swift */,
+				E1B1ADE826729BC900230C7E /* FriendsViewCell.swift */,
+				E1B1ADEC26729C9300230C7E /* FotoViewCell.swift */,
+				E1D8BD992684FE5300ED2FF2 /* NewsViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E1B1ADDD2672949F00230C7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1B1ADEE2672A12900230C7E /* User.swift */,
+				E1B1ADF02672A13700230C7E /* Group.swift */,
+				E1D8BD942684FDE800ED2FF2 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D8BD91267F3C1100ED2FF2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8BD92267F3C4500ED2FF2 /* SectionHeaderTableView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +236,19 @@
 			files = (
 				E11EADA426656502008ED723 /* LoginViewController.swift in Sources */,
 				E11EAD8D26656496008ED723 /* AppDelegate.swift in Sources */,
+<<<<<<< Updated upstream
+=======
+				E1B1ADF12672A13700230C7E /* Group.swift in Sources */,
+				E1D8BD9C2687205F00ED2FF2 /* LoadingViewController.swift in Sources */,
+				E1D8BD9A2684FE5300ED2FF2 /* NewsViewCell.swift in Sources */,
+				E14A74AF267E5368004BB744 /* LikeControl.swift in Sources */,
+				E1D8BD93267F3C4500ED2FF2 /* SectionHeaderTableView.swift in Sources */,
+				E1B1ADDF2672954B00230C7E /* MyCommunitiesViewController.swift in Sources */,
+				E1B1ADEB26729C7000230C7E /* FotoViewController.swift in Sources */,
+				E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */,
+				E1B1ADEF2672A12900230C7E /* User.swift in Sources */,
+				E1B1ADE526729A6600230C7E /* allCommunitiesViewCell.swift in Sources */,
+>>>>>>> Stashed changes
 				E11EAD8F26656496008ED723 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
