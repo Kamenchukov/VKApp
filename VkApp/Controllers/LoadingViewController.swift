@@ -103,8 +103,35 @@ class LoadingViewController: UIViewController {
                                                                                                             dot3.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
                                                                                                            },
                                                                                                            completion: {_ in
+                                    
                                                                                                             
-                                                                                                            self.performSegue(withIdentifier: "goForth", sender: self)
+                UIView.animate(withDuration: animationDuration,
+                               delay: 0,
+                               options: [],
+                               animations: {
+                                dot1.alpha += 0.5
+                                dot1.transform = CGAffineTransform(scaleX: 1, y: 1)
+                                },
+                                completion: {_ in
+                                UIView.animate(withDuration: animationDuration,
+                                               delay: 0,
+                                               options: [],
+                                               animations: {
+                                                dot2.alpha += 0.5
+                                                dot2.transform = CGAffineTransform(scaleX: 1, y: 1)
+                                                },
+                                                completion: {_ in
+                                                UIView.animate(withDuration: animationDuration,
+                                                               delay: 0,
+                                                               options: [],
+                                                               animations: {
+                                                                dot3.alpha += 0.5
+                                                                dot3.transform = CGAffineTransform(scaleX: 1, y: 1)
+                                                                },
+                                                                                                                                                           completion: {_ in
+                        self.performSegue(withIdentifier: "goForth", sender: self)
+                                                                                                                                                                            
+                                                                                                                                                                  })                                                                     })                                                                       })
                                                                                                            })
                                                                                            })
                                                                            })
