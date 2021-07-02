@@ -485,7 +485,7 @@
         <!--Friends-->
         <scene sceneID="sV4-PY-Tja">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="AfH-6e-wtI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="AfH-6e-wtI" customClass="CustomNavigationController" customModule="VkApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="person.2.fill" catalog="system" id="9Ut-jk-sTw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5z-Ab-654">
@@ -504,7 +504,7 @@
         <!--Communities-->
         <scene sceneID="wnB-Pd-VFa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="LG3-tH-2ic" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="LG3-tH-2ic" customClass="CustomNavigationController" customModule="VkApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Communities" image="person.3.fill" catalog="system" id="jq4-6R-BTl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P3E-YT-STV">
@@ -648,7 +648,7 @@
         <!--News-->
         <scene sceneID="tEj-gi-NGD">
             <objects>
-                <navigationController id="Sw4-Ym-tN1" sceneMemberID="viewController">
+                <navigationController id="Sw4-Ym-tN1" customClass="CustomNavigationController" customModule="VkApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" id="TeP-4S-Qcc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z4A-0H-2rK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
