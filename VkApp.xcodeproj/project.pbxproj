@@ -15,6 +15,9 @@
 		E11EADA426656502008ED723 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EADA326656502008ED723 /* LoginViewController.swift */; };
 		E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AC267E5345004BB744 /* AvatarView.swift */; };
 		E14A74AF267E5368004BB744 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14A74AE267E5368004BB744 /* LikeControl.swift */; };
+		E182242B268B74BE000D98DF /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182242A268B74BE000D98DF /* CarouselView.swift */; };
+		E182242D268B7608000D98DF /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182242C268B7608000D98DF /* Gallery.swift */; };
+		E182242F268E3A4A000D98DF /* FriendCarouselPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182242E268E3A4A000D98DF /* FriendCarouselPhotoViewController.swift */; };
 		E1B1ADDF2672954B00230C7E /* MyCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */; };
 		E1B1ADE12672957C00230C7E /* MyCommunitiesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */; };
 		E1B1ADE326729A2800230C7E /* allCommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */; };
@@ -43,6 +46,9 @@
 		E11EADA326656502008ED723 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E14A74AC267E5345004BB744 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		E14A74AE267E5368004BB744 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		E182242A268B74BE000D98DF /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		E182242C268B7608000D98DF /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		E182242E268E3A4A000D98DF /* FriendCarouselPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCarouselPhotoViewController.swift; sourceTree = "<group>"; };
 		E1B1ADDE2672954B00230C7E /* MyCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewController.swift; sourceTree = "<group>"; };
 		E1B1ADE02672957C00230C7E /* MyCommunitiesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommunitiesViewCell.swift; sourceTree = "<group>"; };
 		E1B1ADE226729A2800230C7E /* allCommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allCommunitiesViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,8 @@
 			children = (
 				E14A74AC267E5345004BB744 /* AvatarView.swift */,
 				E14A74AE267E5368004BB744 /* LikeControl.swift */,
+				E182242A268B74BE000D98DF /* CarouselView.swift */,
+				E182242C268B7608000D98DF /* Gallery.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 				E1B1ADEA26729C7000230C7E /* FotoViewController.swift */,
 				E1D8BD962684FE1300ED2FF2 /* NewsViewController.swift */,
 				E1D8BD9B2687205F00ED2FF2 /* LoadingViewController.swift */,
+				E182242E268E3A4A000D98DF /* FriendCarouselPhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +241,8 @@
 				E11EADA426656502008ED723 /* LoginViewController.swift in Sources */,
 				E1B1ADED26729C9300230C7E /* FotoViewCell.swift in Sources */,
 				E1B1ADE12672957C00230C7E /* MyCommunitiesViewCell.swift in Sources */,
+				E182242F268E3A4A000D98DF /* FriendCarouselPhotoViewController.swift in Sources */,
+				E182242B268B74BE000D98DF /* CarouselView.swift in Sources */,
 				E1B1ADE326729A2800230C7E /* allCommunitiesViewController.swift in Sources */,
 				E11EAD8D26656496008ED723 /* AppDelegate.swift in Sources */,
 				E1B1ADF12672A13700230C7E /* Group.swift in Sources */,
@@ -243,6 +254,7 @@
 				E1B1ADEB26729C7000230C7E /* FotoViewController.swift in Sources */,
 				E14A74AD267E5345004BB744 /* AvatarView.swift in Sources */,
 				E1B1ADEF2672A12900230C7E /* User.swift in Sources */,
+				E182242D268B7608000D98DF /* Gallery.swift in Sources */,
 				E1B1ADE526729A6600230C7E /* allCommunitiesViewCell.swift in Sources */,
 				E11EAD8F26656496008ED723 /* SceneDelegate.swift in Sources */,
 				E1D8BD972684FE1300ED2FF2 /* NewsViewController.swift in Sources */,

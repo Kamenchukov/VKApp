@@ -247,17 +247,21 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="fotoCell" id="bAL-qL-KlI" customClass="FotoViewCell" customModule="VkApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vdS-IQ-1Qs">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIO-UN-qCe">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="4gX-Xz-nef"/>
+                                                <constraint firstAttribute="height" constant="140" id="yPA-kM-HWo"/>
+                                            </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kv9-YF-AxU" customClass="LikeControl" customModule="VkApp" customModuleProvider="target">
-                                            <rect key="frame" x="88" y="108" width="40" height="20"/>
+                                            <rect key="frame" x="100" y="120" width="40" height="20"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI4-8Y-Rm6">
                                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -309,6 +313,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="friendFoto" destination="UIO-UN-qCe" id="nIp-SA-Bc1"/>
+                                    <segue destination="JN8-oh-OIJ" kind="show" id="H9I-ur-V54"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -325,6 +330,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C67-N8-CFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3503" y="-370"/>
+        </scene>
+        <!--Friend Carousel Photo View Controller-->
+        <scene sceneID="1b2-ZH-rYr">
+            <objects>
+                <viewController id="JN8-oh-OIJ" customClass="FriendCarouselPhotoViewController" customModule="VkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5v-Ft-8pV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zm9-83-3pZ" customClass="CarouselView" customModule="VkApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="251" width="398" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="BU3-BI-69H"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V5N-BP-cAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zm9-83-3pZ" firstAttribute="leading" secondItem="V5N-BP-cAr" secondAttribute="leading" constant="8" id="0Z9-DE-Sdc"/>
+                            <constraint firstItem="V5N-BP-cAr" firstAttribute="trailing" secondItem="zm9-83-3pZ" secondAttribute="trailing" constant="8" id="aG3-Ka-3ai"/>
+                            <constraint firstItem="zm9-83-3pZ" firstAttribute="centerY" secondItem="z5v-Ft-8pV" secondAttribute="centerY" id="gSa-Uk-szV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gUR-8V-VJX"/>
+                    <connections>
+                        <outlet property="FriendLargePhotoView" destination="zm9-83-3pZ" id="p17-x6-V5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0t5-Lb-iBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dED-Ec-Zfv">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="zm9-83-3pZ" id="2Ad-R7-2VR"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4383" y="-370"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="t6O-7o-5CJ">
@@ -554,10 +596,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yL0-7C-0UW">
-                                            <rect key="frame" x="28" y="167.5" width="358" height="267.5"/>
+                                            <rect key="frame" x="28" y="135.5" width="358" height="299.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oY4-wR-eYq">
-                                            <rect key="frame" x="28" y="139" width="358" height="20.5"/>
+                                            <rect key="frame" x="28" y="107" width="358" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -618,7 +660,7 @@
                                         <constraint firstItem="AIh-k1-mDd" firstAttribute="leading" secondItem="6ri-s2-68T" secondAttribute="leadingMargin" constant="8" id="l0I-OV-hV5"/>
                                         <constraint firstItem="oiz-mp-6Ty" firstAttribute="leading" secondItem="AIh-k1-mDd" secondAttribute="trailing" constant="28" id="lfF-Le-jTP"/>
                                         <constraint firstItem="oiz-mp-6Ty" firstAttribute="top" secondItem="6ri-s2-68T" secondAttribute="topMargin" constant="8" id="mDP-TP-VqL"/>
-                                        <constraint firstItem="oY4-wR-eYq" firstAttribute="top" secondItem="AIh-k1-mDd" secondAttribute="bottom" constant="40" id="tVM-x6-fqL"/>
+                                        <constraint firstItem="oY4-wR-eYq" firstAttribute="top" secondItem="AIh-k1-mDd" secondAttribute="bottom" constant="8" id="tVM-x6-fqL"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yL0-7C-0UW" secondAttribute="trailing" constant="8" id="vvt-7I-6hl"/>
                                         <constraint firstItem="yL0-7C-0UW" firstAttribute="leading" secondItem="6ri-s2-68T" secondAttribute="leadingMargin" constant="8" id="zvw-cV-Maf"/>
                                     </constraints>

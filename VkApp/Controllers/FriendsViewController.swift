@@ -74,19 +74,13 @@ class FriendsViewController: UIViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "users", for: indexPath) as? FriendsViewCell
     else {//cell.configure(users[indexPath.row])
         return UITableViewCell()
-            //cell
+            
     }
         let user = sortedUsers[indexPath.section][indexPath.row]
         cell.configure(user)
         return cell
     }
-//        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//            let sectionHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionHeaderTableView.identifier) as! SectionHeaderTableView
-//
-//            sectionHeader.configure(firstLetters[section])
-//
-//            return sectionHeader
-//        }
+
          func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
             return firstLetters[section]
         }
